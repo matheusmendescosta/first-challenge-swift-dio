@@ -9,9 +9,11 @@ struct ContentView: View {
             Text("Primeiro desafio Swift Dio.me!")
             
             let firstName = "Steve"
-            var secondName: String? = "Jobs"
+            var lastName: String? = "Jobs"
             
-            if let unwrapSecondName = secondName {
+            Text("\(firstName) \(lastName ?? "Wozniak")")
+            
+            if let unwrapSecondName = lastName {
                 Text("\(firstName) \(unwrapSecondName)")
             }
         }
